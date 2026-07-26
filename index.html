@@ -7,76 +7,103 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white">
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-blue-900 selection:text-white">
 
     <!-- Sticky Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-2">
-                <span class="text-xl font-black tracking-tight text-slate-900">ZMC <span class="text-blue-600 font-bold">& ASSOCIATES</span></span>
+                <span class="text-xl font-black tracking-tight text-slate-900">ZMC <span class="text-blue-900 font-bold">& ASSOCIATES</span></span>
             </div>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#about" class="hover:text-blue-600 transition">Why ZMC</a>
-                <a href="#capabilities" class="hover:text-blue-600 transition">Capabilities</a>
-                <a href="#case-studies" class="hover:text-blue-600 transition">Impact</a>
-                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                <a href="#about" class="hover:text-blue-900 transition">Why ZMC</a>
+                <a href="#capabilities" class="hover:text-blue-900 transition">Capabilities</a>
+                <a href="#case-studies" class="hover:text-blue-900 transition">Impact</a>
+                <a href="#faq" class="hover:text-blue-900 transition">FAQ</a>
             </nav>
             <div class="flex items-center space-x-4">
-                <!-- Replace the link below with your actual O365 Bookings link when ready -->
-                <a href="https://outlook.office365.com/owa/calendar/your-bookings-link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition">
+                <a href="https://outlook.office365.com/owa/calendar/your-bookings-link" target="_blank" rel="noopener noreferrer" class="bg-blue-900 hover:bg-blue-950 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition">
                     Book Discovery Call
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Vibrant Gradient Hero Section -->
-    <section class="relative pt-20 pb-28 overflow-hidden bg-gradient-to-br from-blue-700 via-indigo-800 to-emerald-600 text-white">
+    <!-- Professional Hero Section -->
+    <section class="relative pt-20 pb-24 bg-gradient-to-r from-blue-900 to-blue-800 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="1200" height="600" fill="url(#grid)" />
+            </svg>
+        </div>
         <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 space-y-6">
-                <div class="inline-flex items-center gap-2 bg-white/10 text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/10">
+                <div class="inline-flex items-center gap-2 bg-white/15 text-amber-300 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/25">
                     WBENC & NMSDC-Certified Partner
                 </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
-                    Expert Back-Office <br><span class="text-emerald-300">Outsourcing. CPA-Led.</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Expert Back-Office <br><span class="text-amber-300">Outsourcing</span>
+                    <br>CPA-Led Solutions
                 </h1>
                 <p class="text-lg text-blue-100 max-w-xl leading-relaxed">
                     ZMC & Associates helps organizations reduce overhead, increase capacity, and scale efficiently—backed by 30+ years of finance and accounting expertise.
                 </p>
                 <div class="pt-4 flex flex-col sm:flex-row gap-4">
-                    <a href="https://outlook.office365.com/owa/calendar/your-bookings-link" target="_blank" rel="noopener noreferrer" class="bg-amber-500 hover:bg-amber-600 text-slate-950 text-center font-bold px-8 py-4 rounded-xl transition">
+                    <a href="https://outlook.office365.com/owa/calendar/your-bookings-link" target="_blank" rel="noopener noreferrer" class="bg-amber-500 hover:bg-amber-600 text-blue-950 text-center font-bold px-8 py-3 rounded-lg transition shadow-lg">
                         Schedule a Discovery Call
                     </a>
-                    <a href="#capabilities" class="bg-white/10 hover:bg-white/20 text-white text-center font-bold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-sm transition">
+                    <a href="#capabilities" class="bg-white/20 hover:bg-white/30 text-white text-center font-bold px-8 py-3 rounded-lg border border-white/40 backdrop-blur-sm transition">
                         View Core Capabilities
                     </a>
                 </div>
             </div>
             
-            <!-- Strategic Dashboard Visual Placement -->
+            <!-- Professional Stats Box -->
             <div class="lg:col-span-5 flex justify-center relative">
-                <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-2xl w-full max-w-md space-y-4">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-4">
-                        <span class="text-xs font-bold uppercase tracking-wider text-emerald-300">Platform Flexible Systems</span>
-                        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl w-full max-w-md space-y-6">
+                    <div class="space-y-4">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-amber-300">Why Choose ZMC</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-1 h-1 rounded-full bg-amber-300 mt-2 flex-shrink-0"></div>
+                                <p class="text-sm text-blue-50">30+ years of CPA-led finance expertise</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1 h-1 rounded-full bg-amber-300 mt-2 flex-shrink-0"></div>
+                                <p class="text-sm text-blue-50">61% average cost reduction for clients</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-1 h-1 rounded-full bg-amber-300 mt-2 flex-shrink-0"></div>
+                                <p class="text-sm text-blue-50">Zero operational disruption guarantee</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-xs text-slate-200 leading-relaxed">
-                        Adapting natively to your existing ERP, accounting, and HRIS environments with zero operational disruption.
-                    </p>
-                    <div class="grid grid-cols-2 gap-3 pt-2">
-                        <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-center"><div class="text-xl font-bold text-amber-400">30+ Yrs</div><div class="text-[10px] text-slate-300">CPA Leadership</div></div>
-                        <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-center"><div class="text-xl font-bold text-emerald-400">61%</div><div class="text-[10px] text-slate-300">Cost Reduction</div></div>
+                    <div class="pt-2 border-t border-white/20">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-black text-amber-300">30+</div>
+                                <div class="text-xs text-blue-100 mt-1">Years Experience</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-black text-amber-300">61%</div>
+                                <div class="text-xs text-blue-100 mt-1">Cost Reduction</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-slate-50 transform skew-y-1 origin-bottom-right"></div>
     </section>
 
-    <!-- Why ZMC Intro Section -->
+    <!-- Why ZMC Section -->
     <section id="about" class="py-20 bg-slate-50">
         <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
-            <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600">Why ZMC & Associates</h2>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-900">Why ZMC & Associates</h2>
             <h3 class="text-3xl font-black text-slate-900 tracking-tight sm:text-4xl">Your Operations, Handled by Experts</h3>
             <p class="text-slate-600 text-lg leading-relaxed">
                 When your internal teams are stretched thin, operational complexity grows faster than your headcount. ZMC & Associates steps in as a certified, CPA-led outsourcing partner—taking on back-office operations, financial workflows, and administrative excellence to unlock strategic capacity for your core business.
@@ -84,87 +111,90 @@
         </div>
     </section>
 
-    <!-- Core Capabilities Section (Fixed Multi-Color Layout) -->
-    <section id="capabilities" class="py-24 bg-white border-y border-slate-200">
+    <!-- Core Capabilities Section -->
+    <section id="capabilities" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-2">
-                <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-600">Core Capabilities</h2>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-900">Core Capabilities</h2>
                 <h3 class="text-3xl font-black text-slate-900 tracking-tight sm:text-4xl">What We Do</h3>
                 <p class="text-slate-600">Reliable back-office solutions that streamline workflows and support sustainable growth.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Pillar 1: Emerald (BPM) -->
-                <div class="bg-slate-50 p-6 rounded-2xl border-b-4 border-emerald-500 shadow-sm hover:shadow-md transition">
-                    <h4 class="text-lg font-bold text-slate-900 mb-3">Business Process Management</h4>
-                    <ul class="text-xs text-slate-600 space-y-2 leading-relaxed">
-                        <li>• Back-Office Operations & Workflow Optimization</li>
-                        <li>• Process Documentation & Improvement</li>
-                        <li>• Administrative Support Frameworks</li>
-                        <li>• Contact Center & Customer Operations</li>
-                    </ul>
-                </div>
-
-                <!-- Pillar 2: Blue (Finance & Accounting) -->
-                <div class="bg-slate-50 p-6 rounded-2xl border-b-4 border-blue-500 shadow-sm hover:shadow-md transition">
+                <!-- Pillar 1: Finance & Accounting -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-xl border-l-4 border-blue-900 shadow-sm hover:shadow-md transition">
                     <h4 class="text-lg font-bold text-slate-900 mb-3">Finance & Accounting</h4>
-                    <ul class="text-xs text-slate-600 space-y-2 leading-relaxed">
-                        <li>• Bookkeeping & General Ledger Management</li>
-                        <li>• Accounts Payable & Receivable Systems</li>
-                        <li>• Financial Reporting & Month-End Close</li>
-                        <li>• Strategic CFO & Controller Support</li>
+                    <ul class="text-sm text-slate-700 space-y-2 leading-relaxed">
+                        <li>• Bookkeeping & General Ledger</li>
+                        <li>• Accounts Payable & Receivable</li>
+                        <li>• Financial Reporting & Close</li>
+                        <li>• Strategic CFO Support</li>
                     </ul>
                 </div>
 
-                <!-- Pillar 3: Amber (Payroll Solutions) -->
-                <div class="bg-slate-50 p-6 rounded-2xl border-b-4 border-amber-500 shadow-sm hover:shadow-md transition">
+                <!-- Pillar 2: Payroll Solutions -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-xl border-l-4 border-amber-500 shadow-sm hover:shadow-md transition">
                     <h4 class="text-lg font-bold text-slate-900 mb-3">Payroll & Workforce</h4>
-                    <ul class="text-xs text-slate-600 space-y-2 leading-relaxed">
-                        <li>• Payroll Processing & Administration</li>
-                        <li>• Global Payroll Network Support</li>
-                        <li>• Employer of Record (EOR) Coordination</li>
-                        <li>• Multi-State Regulatory Compliance Mapping</li>
+                    <ul class="text-sm text-slate-700 space-y-2 leading-relaxed">
+                        <li>• Payroll Processing</li>
+                        <li>• Global Payroll Network</li>
+                        <li>• Employer of Record (EOR)</li>
+                        <li>• Regulatory Compliance</li>
                     </ul>
                 </div>
 
-                <!-- Pillar 4: Purple (Advisory Services) -->
-                <div class="bg-slate-50 p-6 rounded-2xl border-b-4 border-purple-500 shadow-sm hover:shadow-md transition">
+                <!-- Pillar 3: Business Process Management -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-xl border-l-4 border-slate-400 shadow-sm hover:shadow-md transition">
+                    <h4 class="text-lg font-bold text-slate-900 mb-3">Business Operations</h4>
+                    <ul class="text-sm text-slate-700 space-y-2 leading-relaxed">
+                        <li>• Process Optimization</li>
+                        <li>• Workflow Documentation</li>
+                        <li>• Administrative Support</li>
+                        <li>• Customer Operations</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 4: Advisory Services -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-xl border-l-4 border-blue-700 shadow-sm hover:shadow-md transition">
                     <h4 class="text-lg font-bold text-slate-900 mb-3">Advisory Services</h4>
-                    <ul class="text-xs text-slate-600 space-y-2 leading-relaxed">
-                        <li>• Fractional CFO Strategic Support</li>
-                        <li>• Operational Corporate Consulting</li>
-                        <li>• Process Improvement Initiatives</li>
-                        <li>• Risk Mitigation Architectural Modeling</li>
+                    <ul class="text-sm text-slate-700 space-y-2 leading-relaxed">
+                        <li>• Fractional CFO Services</li>
+                        <li>• Strategic Consulting</li>
+                        <li>• Process Improvement</li>
+                        <li>• Risk Mitigation</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Real Success Metrics & Case Studies (Fixed 0% Error) -->
-    <section id="case-studies" class="py-24 bg-slate-950 text-white relative overflow-hidden">
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-24 bg-slate-900 text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">Proven Performance</h2>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">Proven Performance</h2>
                 <h3 class="text-3xl font-black tracking-tight">Real Success Rates & Impact</h3>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-slate-900 p-8 rounded-2xl border border-emerald-500/20 space-y-4">
-                    <div class="text-4xl font-black text-emerald-400">61% Cost Reduction</div>
-                    <p class="text-xs text-slate-300 leading-relaxed">
+                <div class="bg-slate-800 p-8 rounded-xl border-l-4 border-amber-500 space-y-3">
+                    <div class="text-3xl font-black text-amber-400">61%</div>
+                    <h4 class="font-bold text-lg">Cost Reduction</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
                         Successfully transitioned back-office F&A operations for a regional financial planning firm with zero client disruption, reducing total operating costs significantly.
                     </p>
                 </div>
-                <div class="bg-slate-900 p-8 rounded-2xl border border-blue-500/20 space-y-4">
-                    <div class="text-4xl font-black text-blue-400">Global Onboarding</div>
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                        Served as Employer of Record (EOR) for a company expanding its workforce—enabling them to hire talent globally and manage complex multi-region compliance paths safely within regulatory requirements.
+                <div class="bg-slate-800 p-8 rounded-xl border-l-4 border-blue-400 space-y-3">
+                    <div class="text-3xl font-black text-blue-400">100+</div>
+                    <h4 class="font-bold text-lg">Global Hires</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Served as Employer of Record (EOR) for companies expanding their workforce—enabling them to hire talent globally and manage complex multi-region compliance safely within regulatory requirements.
                     </p>
                 </div>
-                <div class="bg-slate-900 p-8 rounded-2xl border border-amber-500/20 space-y-4">
-                    <div class="text-4xl font-black text-amber-400">Scalable Capacity</div>
-                    <p class="text-xs text-slate-300 leading-relaxed">
+                <div class="bg-slate-800 p-8 rounded-xl border-l-4 border-slate-400 space-y-3">
+                    <div class="text-3xl font-black text-slate-200">500+</div>
+                    <h4 class="font-bold text-lg">Peak Season Hours</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
                         Provided outsourced bookkeeping and general ledger support to specialized CPA firms during peak tax seasons and year-end close windows, delivering critical on-demand operational support.
                     </p>
                 </div>
@@ -172,38 +202,38 @@
         </div>
     </section>
 
-    <!-- Clean & Validated FAQ Section (No Lorem Ipsum) -->
-    <section id="faq" class="py-24 bg-slate-50">
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-16 space-y-2">
-                <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600">Common Questions</h2>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-900">Common Questions</h2>
                 <h3 class="text-3xl font-black text-slate-900 tracking-tight">Frequently Asked Questions</h3>
             </div>
 
             <div class="space-y-4">
-                <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm bg-white">
-                    <div class="bg-emerald-600 text-white px-6 py-4 font-bold flex justify-between items-center">
-                        <span>How does the onboarding process look for new clients?</span>
+                <div class="border border-slate-200 rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition">
+                    <div class="bg-blue-900 text-white px-6 py-4 font-bold">
+                        <span>How does the onboarding process work?</span>
                     </div>
-                    <div class="p-6 text-sm text-slate-600 leading-relaxed">
+                    <div class="p-6 text-sm text-slate-700 leading-relaxed">
                         Our team systematically maps your current operational architecture, workflows, and data pipelines to integrate our CPA-led staff natively into your environment without interruption. We deliver a custom integration timeline and operational handbook tailored to your specific needs.
                     </div>
                 </div>
 
-                <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm bg-white">
-                    <div class="bg-blue-600 text-white px-6 py-4 font-bold flex justify-between items-center">
-                        <span>Which software systems and ERP platforms can you support?</span>
+                <div class="border border-slate-200 rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition">
+                    <div class="bg-blue-900 text-white px-6 py-4 font-bold">
+                        <span>Which software systems can you support?</span>
                     </div>
-                    <div class="p-6 text-sm text-slate-600 leading-relaxed">
+                    <div class="p-6 text-sm text-slate-700 leading-relaxed">
                         We are platform-flexible. Our operational units work fluidly across all major enterprise suites, including QuickBooks, NetSuite, Sage, and various industrial HRIS and payroll management systems. We adapt to your ecosystem, not the other way around.
                     </div>
                 </div>
 
-                <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm bg-white">
-                    <div class="bg-amber-500 text-slate-950 px-6 py-4 font-bold flex justify-between items-center">
-                        <span>How does supplier diversity spend mapping benefit our firm?</span>
+                <div class="border border-slate-200 rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition">
+                    <div class="bg-blue-900 text-white px-6 py-4 font-bold">
+                        <span>How does supplier diversity spend mapping work?</span>
                     </div>
-                    <div class="p-6 text-sm text-slate-600 leading-relaxed">
+                    <div class="p-6 text-sm text-slate-700 leading-relaxed">
                         As a WBENC and NMSDC-certified enterprise, partnering with ZMC & Associates enables corporate entities and government contractors to seamlessly achieve mandatory corporate diversity spending targets while accessing enterprise-grade back-office excellence.
                     </div>
                 </div>
@@ -211,27 +241,27 @@
         </div>
     </section>
 
-    <!-- Dark High-Contrast Contact Footer with Verified Corporate Data -->
-    <footer class="bg-slate-950 text-slate-400 py-20 border-t border-slate-900">
+    <!-- Professional Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <div class="text-2xl font-black text-white tracking-tight">ZMC <span class="text-blue-500 font-bold">& ASSOCIATES</span></div>
-                <p class="text-xs max-w-sm leading-relaxed text-slate-400">
+                <div class="text-2xl font-black text-white tracking-tight">ZMC <span class="text-amber-500 font-bold">& ASSOCIATES</span></div>
+                <p class="text-sm max-w-sm leading-relaxed text-slate-400">
                     4568 Lawrenceville Hwy, Suite 220C, Lilburn, GA 30047 <br>
                     Office Line: 678-389-7094 | Email: info@zmcassociates.com
                 </p>
-                <div class="text-xs text-slate-600">&copy; 2026 ZMC & Associates LLC. Certified WBE & MBE. All rights reserved.</div>
+                <div class="text-xs text-slate-500">&copy; 2026 ZMC & Associates LLC. Certified WBE & MBE. All rights reserved.</div>
             </div>
             
-            <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl space-y-4">
-                <h4 class="text-xl font-bold text-white tracking-tight">Secure Your Operational Architecture</h4>
-                <p class="text-xs text-slate-400">Launch an administrative assessment consultation directly with our fractional advisory board via Office 365.</p>
+            <div class="bg-slate-800 border border-slate-700 p-8 rounded-lg space-y-4">
+                <h4 class="text-lg font-bold text-white tracking-tight">Schedule Your Consultation</h4>
+                <p class="text-sm text-slate-400">Launch an administrative assessment consultation directly with our fractional advisory board.</p>
                 <div class="flex flex-wrap gap-3 pt-2">
-                    <a href="https://outlook.office365.com/owa/calendar/your-bookings-link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-3 rounded-xl text-sm transition">
-                        Book Calendar Portal
+                    <a href="https://outlook.office365.com/owa/calendar/your-bookings-link" target="_blank" rel="noopener noreferrer" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-5 py-3 rounded-lg text-sm transition">
+                        Book Calendar
                     </a>
-                    <a href="mailto:info@zmcassociates.com" class="bg-slate-850 hover:bg-slate-800 text-white border border-slate-700 font-bold px-5 py-3 rounded-xl text-sm transition">
-                        Direct Email Access
+                    <a href="mailto:info@zmcassociates.com" class="bg-slate-700 hover:bg-slate-600 text-white border border-slate-600 font-bold px-5 py-3 rounded-lg text-sm transition">
+                        Direct Email
                     </a>
                 </div>
             </div>
